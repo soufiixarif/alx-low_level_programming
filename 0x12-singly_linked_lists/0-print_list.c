@@ -1,5 +1,11 @@
 #include "lists.h"
 
+/**
+ * print_list - function that print all elements of a list
+ * @h: head of the linked list
+ * Return: number of nodes
+ */
+
 size_t print_list(const list_t *h)
 {
     unsigned int i = 0;
