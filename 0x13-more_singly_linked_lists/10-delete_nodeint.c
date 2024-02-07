@@ -7,6 +7,19 @@
  * Return: 1 if sucess or -1 if fail
  */
 
+static size_t listint_len(const listint_t *h)
+{
+	size_t counter;
+
+	counter = 0;
+	while (h)
+	{
+		counter++;
+		h = h->next;
+	}
+	return (counter);
+}
+
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	unsigned int counter, i = 0;

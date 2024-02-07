@@ -8,6 +8,19 @@
  * Return: a pointer to the new created node
  */
 
+static size_t listint_len(const listint_t *h)
+{
+	size_t counter;
+
+	counter = 0;
+	while (h)
+	{
+		counter++;
+		h = h->next;
+	}
+	return (counter);
+}
+
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *node, *tmp;
