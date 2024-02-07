@@ -1,5 +1,11 @@
 #include "lists.h"
 
+/**
+ * pop_listint - function that delete first node and return the node's data
+ * @head: the head of the list
+ * Return: the data of the first node
+ */
+
 int pop_listint(listint_t **head)
 {
 	int nb;
