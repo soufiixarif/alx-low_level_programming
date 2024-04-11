@@ -1,5 +1,12 @@
 #include "hash_tables.h"
 
+/**
+*hash_table_create - function creat table
+* @table: the new table
+* @i : index
+* return: the new table
+*/
+
 hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *table;
